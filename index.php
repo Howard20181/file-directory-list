@@ -317,6 +317,6 @@ build_blocks( $items, false );
 </script>
 <?php } ?>
 </div>
-<div style="padding: 10px 10px 40px 10px;"><a href="https://halgatewood.com/free/file-directory-list/">Free PHP File Directory Script</a> (<a href="https://github.com/halgatewood/file-directory-list/">GitHub</a>)</div>
+<div style="padding: 10px 10px 40px 10px;"><a target="_blank" href="https://halgatewood.com/free/file-directory-list/">Free PHP File Directory Script</a> (<a target="_blank" href="https://github.com/halgatewood/file-directory-list/">GitHub</a>)&nbsp;<a target="_blank" href="https://github.com/Howard20181/file-directory-list/tree/zh-cn">本地化版本</a></div>
 </body>
 </html>

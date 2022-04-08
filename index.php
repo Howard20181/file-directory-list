@@ -29,7 +29,7 @@ SOFTWARE.
 *** OPTIONS ***/
 
 	// TITLE OF PAGE
-	$title = "List of Files";
+	$title = "文件列表";
 	
 	// STYLING (light or dark)
 	$color	= "light";
@@ -188,14 +188,14 @@ function display_block( $file )
 	if ($file_ext === "dir") 
 	{
 		$rtn .= "		<div class=\"file fs-1-2 bold\">" . htmlspecialchars(basename($file), ENT_QUOTES) . "</div>".PHP_EOL;
-		$rtn .= "		<div class=\"data upper size fs-0-7\"><span class=\"bold\">" . count_dir_files($file) . "</span> files</div>".PHP_EOL;
-		$rtn .= "		<div class=\"data upper size fs-0-7\"><span class=\"bold\">Size:</span> " . get_directory_size($file) . "</div>".PHP_EOL;
+		$rtn .= "		<div class=\"data upper size fs-0-7\"><span class=\"bold\">" . count_dir_files($file) . "</span> 个项目</div>".PHP_EOL;
+		$rtn .= "		<div class=\"data upper size fs-0-7\"><span class=\"bold\">大小: </span> " . get_directory_size($file) . "</div>".PHP_EOL;
 	}
 	else
 	{
 		$rtn .= "		<div class=\"file fs-1-2 bold\">" . htmlspecialchars(basename($file), ENT_QUOTES) . "</div>".PHP_EOL;
-		$rtn .= "		<div class=\"data upper size fs-0-7\"><span class=\"bold\">Size:</span> " . display_size(filesize($file)) . "</div>".PHP_EOL;
-		$rtn .= "		<div class=\"data upper modified fs-0-7\"><span class=\"bold\">Last modified:</span> " .  date("D. F jS, Y - h:ia", filemtime($file)) . "</div>".PHP_EOL;	
+		$rtn .= "		<div class=\"data upper size fs-0-7\"><span class=\"bold\">大小: </span> " . display_size(filesize($file)) . "</div>".PHP_EOL;
+		$rtn .= "		<div class=\"data upper modified fs-0-7\"><span class=\"bold\">最后修改: </span> " .  date("c", filemtime($file)) . "</div>".PHP_EOL;	
 	}
 
 	$rtn .= "	</div>".PHP_EOL;

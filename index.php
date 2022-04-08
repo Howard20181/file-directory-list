@@ -66,7 +66,7 @@ if( !$title ) { $title = clean_title(basename(dirname(__FILE__))); }
 	<title><?php echo $title; ?></title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0, viewport-fit=cover">
-	<link href="//fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css" />
+	<link href="/static/css/Lato400,900.css" rel="stylesheet" type="text/css" />
 	<style>
 		*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 		body { background: #dadada; font-family: "Lato", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 400; font-size: 14px; line-height: 18px; padding: 0; margin: 0; text-align: center;}
@@ -303,7 +303,7 @@ build_blocks( $items, false );
 ?>
 
 <?php if($toggle_sub_folders) { ?>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+<script src="/static/js/jquery.min.1.7.0.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() 
 	{

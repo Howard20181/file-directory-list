@@ -27,6 +27,8 @@ SOFTWARE.
 
 
 *** OPTIONS ***/
+/* Set locale to utf-8 */
+setlocale(LC_ALL, "zh_CN.UTF-8");
 
 	// TITLE OF PAGE
 	$title = "文件列表";
@@ -181,7 +183,7 @@ function display_block( $file )
 	$file_url = htmlEntities(rawurlencode($file), ENT_QUOTES);
 
 	$rtn = "<div class=\"block\">".PHP_EOL;
-	$rtn .= "<a href=\"$file_url\" class=\"$file_ext\"{$download_att}>".PHP_EOL;
+	$rtn .= "<a target=\"_blank\" href=\"$file_url\" class=\"$file_ext\"{$download_att}>".PHP_EOL;
 	$rtn .= "	<div class=\"img $file_ext\"></div>".PHP_EOL;
 	$rtn .= "	<div class=\"name\">".PHP_EOL;
 	
